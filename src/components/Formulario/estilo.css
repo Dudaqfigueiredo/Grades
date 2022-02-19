@@ -20,9 +20,12 @@
 .form-cadastro_submit {
   align-self: flex-end;
   width: 30%;
-  background-color: var(--secundaria);
+  background-color: #5e0202 ;
   color: white;
   font-weight: 400;
+}
+.form-cadastro_submit:hover{
+  background-color: #A60303;
 }
 
 .form-cadastro_submit:active {
@@ -31,5 +34,4 @@
 
 .border {
   border: solid 1px;
-  box-shadow: 5px 5px 10px 1px rgb(160, 236, 224);
 }
