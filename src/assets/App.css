@@ -7,12 +7,12 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 :root {
   --primaria: #58a4b0;
-  --secundaria: #373f51;
+  --secundaria: #5e0202;
   --secundaria-ativa: #cccccc;
   --fundo: #ffffff;
   --fundo-detalhes: #ececec;

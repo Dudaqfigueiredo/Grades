@@ -6,6 +6,7 @@ import Categorias from './dados/Categorias.js';
 import ArrayDeNotas from './dados/Notas.js';
 import './assets/App.css';
 import './assets/index.css';
+import Header from './components/Header/Header.jsx';
 
 class App extends Component {
   constructor() {
@@ -42,24 +43,28 @@ class App extends Component {
 
   render() {
     return (
-      <section className="conteudo">
-        <Formulario
-          criarNota={this.notas.adicionarNota.bind(this.notas)}
-          categorias={this.categorias}
-        />
-        <main className="conteudo-principal">
-          <ListaDeCategorias
-            adicionarCategoria={this.categorias.adicionarCategoria.bind(
-              this.categorias
-            )}
+      <>
+        <Header />
+        <section className="conteudo">
+          
+          <Formulario
+            criarNota={this.notas.adicionarNota.bind(this.notas)}
             categorias={this.categorias}
           />
-          <ListaDeNotas
-            apagarNota={this.notas.apagarNota.bind(this.notas)}
-            notas={this.notas}
-          />
-        </main>
-      </section>
+          <main className="conteudo-principal">
+            <ListaDeCategorias
+              adicionarCategoria={this.categorias.adicionarCategoria.bind(
+                this.categorias
+              )}
+              categorias={this.categorias}
+            />
+            <ListaDeNotas
+              apagarNota={this.notas.apagarNota.bind(this.notas)}
+              notas={this.notas}
+            />
+          </main>
+        </section>
+      </>
     );
   }
 }

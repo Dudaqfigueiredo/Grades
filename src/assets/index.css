@@ -92,7 +92,7 @@ video {
   outline: 0;
 }
 body {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -443,5 +443,5 @@ textarea {
   padding: 0.2em 0;
 }
 body {
-  background-color: whitesmoke;
+  background-color: white;
 }
