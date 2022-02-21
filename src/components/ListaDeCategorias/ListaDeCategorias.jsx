@@ -28,25 +28,33 @@ class ListaDeCategorias extends Component {
   }
   render() {
     return (
-      <section className='lista-categorias'>
-        <ul className='lista-categorias_lista'>
-          {this.state.categorias.map((categoria, index) => {
-            return (
-              <li key={index} className='lista-categorias_item'>
-                {categoria}
-              </li>
-            );
-          })}
-        </ul>
-        <input
-          type='text'
-          className='lista-categorias_input borda'
-          placeholder='Adicionar Categoria'
-          onKeyUp={this._handleEventoInput.bind(this)} //Soltar a tecla
-        />
-      </section>
+      <>
+        <section className='lista-categorias'>
+            <ul className='lista-categorias_lista'>
+              {this.state.categorias.map((categoria, index) => {
+                return (
+                  
+                  <li key={index} className='lista-categorias_item'>
+                    {categoria}
+                  </li>
+                );
+              })}
+            </ul>
+
+            <input
+              type='text'
+              className='lista-categorias_input borda'
+              placeholder='Adicionar Categoria'
+              onKeyUp={this._handleEventoInput.bind(this)} //Soltar a tecla
+            />
+          </section>
+          <div className="bordacinza"></div>
+        </>
+      
     );
+    
   }
+  
 }
 
 export default ListaDeCategorias;
