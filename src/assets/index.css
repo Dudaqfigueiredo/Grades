@@ -445,3 +445,12 @@ textarea {
 body {
   background-color: white;
 }
+
+img{
+  fill:rgb(24, 23, 23);
+  width: 50px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+}

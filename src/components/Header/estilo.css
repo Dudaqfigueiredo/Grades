@@ -2,12 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     padding: 2rem 2rem;
     z-index: 1;
     width: 100%;
     opacity: 0.9;
-    border: groove 1px;
-    background-color: #D90404
+    border: groove 1px #5e0202;
+    background-color: #5e0202
   }
 
   

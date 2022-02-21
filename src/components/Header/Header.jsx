@@ -15,7 +15,7 @@ const Header = ({ icon, title }) => {
   
   Header.defaultProps = {
     title: 'Reminders',
-    icon: 'fab fa-github-alt',
+    icon: 'fa-solid fa-list-check',
   };
   Header.propTypes = {
     title: PropTypes.string.isRequired,
