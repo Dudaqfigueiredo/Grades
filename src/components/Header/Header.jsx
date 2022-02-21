@@ -3,6 +3,7 @@ import PropTypes from  'prop-types';
 import './estilo.css';
 
 const Header = ({ icon, title }) => {
+
     return (
       <nav className='Header bg-primary'>
         <h1>
@@ -10,6 +11,8 @@ const Header = ({ icon, title }) => {
         </h1>
         
       </nav>
+
+      
     );
   };
   

@@ -15,7 +15,11 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.date{
+  font-size: 13px;
+  color: grey;
+  margin-top: -5%
+}
 .card-nota_texto {
   margin-top: 8px;
   font-size: 1em;
@@ -26,9 +30,39 @@
   margin-right: 12px;
 }
 
-.delete :hover {
+.delete{
+  margin-top: -17px;
+  margin-left: auto;
+  margin-right: -25px;
+  font-size: 30pt;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #f76f6f;
+}
+
+
+
+
+@-webkit-keyframes anim{
+  from {-webkit-transform: rotate(4deg)}
+  to {-webkit-transform: rotate(-4deg)}
+}
+@keyframes anim{
+  from {transform: rotate(4deg)}
+  to {transform: rotate(-4deg)}
+}
+
+.delete :hover  {
   cursor: pointer;
   fill: red;
+  -webkit-animation: anim 2s alternate infinite ease-in-out;
+  animation: anim 2s alternate infinite ease-in-out;
+
 }
 
 .categoria_tipo {

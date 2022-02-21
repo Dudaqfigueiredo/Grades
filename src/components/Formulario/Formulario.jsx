@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './estilo.css';
+import PropTypes from 'prop-types';
 
 class Formulario extends Component {
   constructor(props) {
@@ -10,6 +11,10 @@ class Formulario extends Component {
     this.state = { categorias: [] };
 
     this._novasCategorias = this._novasCategorias.bind(this);
+  }
+
+  static propTypes = {
+    setAlert: PropTypes.func.isRequired,
   }
   componentDidMount() {
     this.props.categorias.inscrever(this._novasCategorias.bind(this));
@@ -38,11 +43,16 @@ class Formulario extends Component {
     this.texto = evento.target.value;
   }
 
-  _criarNota(evento) {
+  _criarNota(evento){
     evento.preventDefault();
     evento.stopPropagation();
-    this.props.criarNota(this.titulo, this.texto, this.categoria);
+    if(this.titulo === '' && this.texto ===''){
+      alert("Digite algo")
+    }else{
+    this.props.criarNota(this.titulo, this.texto, this.categoria);}
   }
+
+
 
   render() {
     return (

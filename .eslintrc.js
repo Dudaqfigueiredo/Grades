@@ -12,5 +12,5 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
-  rules: { 'react/prop-types': 'off' },
+  rules: { 'react/prop-types': 'off', 'no-mixed-spaces-and-tabs': 0 }, 
 };
