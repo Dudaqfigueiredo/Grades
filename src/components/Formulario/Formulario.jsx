@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './estilo.css';
-import PropTypes from 'prop-types';
 
 class Formulario extends Component {
   constructor(props) {
@@ -13,9 +12,7 @@ class Formulario extends Component {
     this._novasCategorias = this._novasCategorias.bind(this);
   }
 
-  static propTypes = {
-    setAlert: PropTypes.func.isRequired,
-  }
+
   componentDidMount() {
     this.props.categorias.inscrever(this._novasCategorias.bind(this));
   }
@@ -81,6 +78,7 @@ class Formulario extends Component {
         <button className='form-cadastro_input form-cadastro_submit'>
           Criar Nota
         </button>
+        <input type="checkbox" id="switch" />
       </form>
     );
   }
