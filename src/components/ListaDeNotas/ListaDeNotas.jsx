@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import CardNota from '../CardNota/CardNota.jsx';
-import './estilo.css';
+import React, { Component } from "react";
+import CardNota from "../CardNota/CardNota.jsx";
+import "./estilo.css";
 class ListaDeNotas extends Component {
   constructor() {
     super();

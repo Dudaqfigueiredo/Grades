@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './estilo.css';
+import React, { Component } from "react";
+import "./estilo.css";
 
 class ListaDeCategorias extends Component {
   constructor() {
@@ -21,7 +21,7 @@ class ListaDeCategorias extends Component {
   }
 
   _handleEventoInput(e) {
-    if (e.key == 'Enter') {
+    if (e.key == "Enter") {
       let valorCategoria = e.target.value;
       this.props.adicionarCategoria(valorCategoria);
     }
@@ -29,32 +29,28 @@ class ListaDeCategorias extends Component {
   render() {
     return (
       <>
-        <section className='lista-categorias'>
-            <ul className='lista-categorias_lista'>
-              {this.state.categorias.map((categoria, index) => {
-                return (
-                  
-                  <li key={index} className='lista-categorias_item'>
-                    {categoria}
-                  </li>
-                );
-              })}
-            </ul>
+        <section className="lista-categorias">
+          <ul className="lista-categorias_lista">
+            {this.state.categorias.map((categoria, index) => {
+              return (
+                <li key={index} className="lista-categorias_item">
+                  {categoria}
+                </li>
+              );
+            })}
+          </ul>
 
-            <input
-              type='text'
-              className='lista-categorias_input borda'
-              placeholder='Adicionar Categoria'
-              onKeyUp={this._handleEventoInput.bind(this)} //Soltar a tecla
-            />
-          </section>
-          <div className="bordacinza"></div>
-        </>
-      
+          <input
+            type="text"
+            className="lista-categorias_input borda"
+            placeholder="Adicionar Categoria"
+            onKeyUp={this._handleEventoInput.bind(this)} //Soltar a tecla
+          />
+        </section>
+        <div className="bordacinza"></div>
+      </>
     );
-    
   }
-  
 }
 
 export default ListaDeCategorias;

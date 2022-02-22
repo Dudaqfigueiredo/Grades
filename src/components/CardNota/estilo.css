@@ -23,11 +23,13 @@
 .card-nota_texto {
   margin-top: 8px;
   font-size: 1em;
+  color: black;
 }
 
 .card-nota_titulo {
   font-size: 1.2em;
   margin-right: 12px;
+  color: black;
 }
 
 .delete{
@@ -59,9 +61,9 @@
 
 .delete :hover  {
   cursor: pointer;
-  fill: red;
-  -webkit-animation: anim 2s alternate infinite ease-in-out;
-  animation: anim 2s alternate infinite ease-in-out;
+  font-size: 100px;
+  /* -webkit-animation: anim 2s alternate infinite ease-in-out;
+  animation: anim 2s alternate infinite ease-in-out; */
 
 }
 
