@@ -9,8 +9,10 @@ export default class ArrayDeNotas {
     this.notificar();
   }
 
-  apagarNota(indice) {
-    this.notas.splice(indice, 1);
+  apagarNota(id) {
+    this.updateNote = JSON.parse(localStorage.getItem('notas')) || this.notas
+    this.notas = this.updateNote.filter((item) => item.id !== id)
+    localStorage.setItem('notas', JSON.stringify(this.notas))
     this.notificar();
   }
 
