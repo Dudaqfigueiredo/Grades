@@ -52,7 +52,9 @@
   -moz-transform: rotate(270deg);
   transform: rotate(270deg);
   opacity:1;
+  font-size: 40px;
 }
+
 
 
 
