@@ -7,7 +7,7 @@ const CardNota = (props) => {
   const { indice, titulo, apagarNota, categoria, texto } = props;
 
   const handleClear = () => {
-    if (confirm(`Tem certeza que deseja deletar a nota: ${titulo}"`)) {
+    if (confirm(`Tem certeza que deseja deletar a nota: ${titulo}`)) {
       apagarNota(indice);
     }
   };
